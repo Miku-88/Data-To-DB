@@ -1,0 +1,93 @@
+@keyframes rgbBorder {
+    20% { border-color: #ff0000; }
+    40% { border-color: #00ff00; } 
+    60% { border-color: #00ffff; }
+    80% { border-color: #0000ff; } 
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    margin: 20px;
+    background-color: #0e0b16; 
+    color: #fff;
+}
+
+h1 {
+    color: #00ffbb; 
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 0 0 10px #8a66ff, 0 0 20px #00ffbb, 0 0 30px #00ffbb, 0 0 40px #00ffbb, 0 0 50px #00ffbb;
+    margin-bottom: 20px;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 187, 0.5); 
+    max-width: 500px;
+    margin: auto;
+    border: 3px solid #00ffbb; 
+    backdrop-filter: blur(5px); 
+    animation: rgbBorder 5s infinite linear; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f5f5f5; 
+    transition: color 0.3s;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #00ffbb;
+    border-radius: 5px;
+    background-color: #1c1c1c; 
+    color: #fff;
+    font-size: 1.1em;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #00ffcc; 
+    box-shadow: 0 0 10px #00ffbb, 0 0 20px #00ffbb; 
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0066cc; 
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 5px #0066cc, 0 0 10px #0066cc;
+    box-shadow: 0 0 5px #0066cc, 0 0 10px #0066cc, 0 0 20px #0066cc;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0044aa; 
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #0044aa, 0 0 20px #0044aa, 0 0 30px #0044aa;
+}
+
+button:active {
+    background-color: #003377; 
+    transform: scale(0.95);
+    box-shadow: 0 0 5px #003377, 0 0 10px #003377;
+}
+
+input, button {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
